@@ -1,0 +1,35 @@
+ server :
+    port : 21000
+
+endpoints :
+  health :
+    sensitive : false
+
+# Vises i /info
+info :
+  id : spring-boot-admin
+
+# Banner
+banner.location : classpath:banner.txt
+
+spring:
+  application:
+    name: Driftsdashboard
+  boot:
+    admin:
+        url: http://localhost:21000
+  main :
+      sources : springboot.admin.Application
+
+info :
+   id : camel-application
+   build :
+      artifact : @project.artifactId@
+      name : @project.name@
+      description : @project.description@
+      version : @project.version@
+
+
+
+
+
