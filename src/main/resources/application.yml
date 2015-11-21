@@ -1,13 +1,5 @@
- server :
+server :
     port : 21000
-
-endpoints :
-  health :
-    sensitive : false
-
-# Vises i /info
-info :
-  id : spring-boot-admin
 
 # Banner
 banner.location : classpath:banner.txt
@@ -15,21 +7,32 @@ banner.location : classpath:banner.txt
 spring:
   application:
     name: Driftsdashboard
+
+  main :
+      sources : springboot.admin.Application
   boot:
     admin:
         url: http://localhost:21000
-  main :
-      sources : springboot.admin.Application
+        notify:
+          mail :
+            enabled : true
+            to : "erik.nygren@online.no"
+            from : "noreply@skatteetaten.no"
+  mail :
+    host : smtp.online.no
+    username : erinygre
+    password : 383skyrt
+    protocol : smtp
+    port : 465
+    test-connection : false
 
+# vises i /info
 info :
-   id : camel-application
+   id : spring-boot-admin
+   version : @project.version@
+   stage : test
    build :
       artifact : @project.artifactId@
       name : @project.name@
       description : @project.description@
       version : @project.version@
-
-
-
-
-
