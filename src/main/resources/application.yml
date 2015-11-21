@@ -21,10 +21,6 @@ spring:
   mail :
     host : smtp.online.no
     username : erinygre
-    password : 383skyrt
-    protocol : smtp
-    port : 465
-    test-connection : false
 
 # vises i /info
 info :
