@@ -19,6 +19,17 @@ spring:
             to : "erik.nygren@skatteetaten.no"
             from : "noreply@skatteetaten.no"
 
+logging :
+  file : application.log
+
+endpoints :
+    health :
+        sensitive : false
+    logfile :
+      enabled : true
+      sensitive : false
+
+
 # vises i /info
 info :
    id : spring-boot-admin
