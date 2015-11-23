@@ -4,9 +4,9 @@
 ╚════██║██╔═══╝ ██╔══██╗██║██║╚██╗██║██║   ██║    ██╔══██╗██║   ██║██║   ██║   ██║       ██╔══██║██║  ██║██║╚██╔╝██║██║██║╚██╗██║
 ███████║██║     ██║  ██║██║██║ ╚████║╚██████╔╝    ██████╔╝╚██████╔╝╚██████╔╝   ██║       ██║  ██║██████╔╝██║ ╚═╝ ██║██║██║ ╚████║
 ╚══════╝╚═╝     ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚═════╝  ╚═════╝  ╚═════╝    ╚═╝       ╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝
-                         ╔══════════════════════════════════════════════════════════════════╗
-                         ║    Application version.......:   @artifactId@ @version@          ║
-                         ║    Spring Boot version.......:   @spring.boot-version@           ║
-                         ║    Spring Boot admin version.:   @spring.boot.admin.version@     ║
-                         ║    Java version..............:   @java.version@                  ║
-                         ╚══════════════════════════════════════════════════════════════════╝
+
+                             Application version.......:   @artifactId@ @version@
+                             Spring Boot version.......:   @spring.boot-version@
+                             Spring Boot admin version.:   @spring.boot.admin.version@
+                             Java version..............:   @java.version@
+
